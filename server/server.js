@@ -1,9 +1,15 @@
 const express = require('express')
 const hbs = require('express-handlebars')
+const path = require('path')
 
 const userRoutes = require('./routes/users')
 
 const server = express()
+
+// Public Folder
+const publicFolder = path.join(__dirname, 'public')
+server.use(express.static(publicFolder))
+server.use(express.urlencoded({ extended: false }))
 
 // Middleware
 server.engine('hbs', hbs.engine({ extname: 'hbs' }))
