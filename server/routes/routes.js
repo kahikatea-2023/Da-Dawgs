@@ -10,15 +10,16 @@ router.get('/', (req, res) => {
 
 router.get('/builder', async (res, req) => {
   // const templateData = await db.getColours()
-  const viewData = 
-  // const viewData = {
-  //   id,
-  //   name,
-  //   main,
-  //   accent,
-  //   font,
-  // }
-  res.render('builder')
+  // const viewData = templateData
+  const viewData = {
+    id: 1,
+    name: 'default',
+    main: '0e316e',
+    accent: 'fa960a',
+    backgound: 'ffffff',
+    font: '000000',
+  }
+  res.render('builder', viewData)
 })
 
 module.exports = router
