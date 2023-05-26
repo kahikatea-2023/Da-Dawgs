@@ -2,6 +2,12 @@ const environment = process.env.NODE_ENV || 'development'
 const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
+=======
+module.exports = {
+  getColours,
+  getColoursForTemplates,
+}
+
 // async function getColours(db = connection) {
 //   return await db('colours')
 //     .join('templates as t1', 't1.mainColour', 'colours.id')
@@ -19,6 +25,10 @@ const connection = require('knex')(config)
 // }
 
 async function getColours(db = connection) {
+  return await db('colours').select()
+}
+
+async function getColoursForTemplates(db = connection) {
   return await db('templates')
     .join('colours as c1', 'c1.id', 'templates.mainColour')
     .join('colours as c2', 'c2.id', 'templates.accentColour')

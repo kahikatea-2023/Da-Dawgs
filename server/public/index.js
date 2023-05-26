@@ -21,9 +21,9 @@ function changeColour(option) {
   const target = document.getElementsByClassName(option)
   target.map((element) => {
     if (option === 'font') {
-      element.style.color = db.getColourById(colour)
+      element.style.color = db.getColourValueById(colour)
     } else {
-      element.style.backgroundColor = db.getColourById(colour)
+      element.style.backgroundColor = db.getColourValueById(colour)
     }
   })
 }
