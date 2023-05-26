@@ -2,6 +2,7 @@ const environment = process.env.NODE_ENV || 'development'
 const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
+=======
 module.exports = {
   getColours,
   getColoursForTemplates,
@@ -43,4 +44,13 @@ async function getColoursForTemplates(db = connection) {
       'c4.colourName as fontColourName',
       'c4.colourHex as fontColourHex'
     )
+}
+
+async function getColourById (colour) {
+
+}
+
+module.exports = {
+  getColours,
+  getColourById  
 }
