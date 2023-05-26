@@ -9,16 +9,9 @@ router.get('/', (req, res) => {
 })
 
 router.get('/builder', async (res, req) => {
-  // const templateData = await db.getColours()
-  // const viewData = templateData
-  const viewData = {
-    id: 1,
-    name: 'default',
-    main: '0e316e',
-    accent: 'fa960a',
-    backgound: 'ffffff',
-    font: '000000',
-  }
+  const templateData = await db.getColours()
+  const viewData = templateData
+  // console.log('viewData: ', viewData)
   res.render('builder', viewData)
 })
 

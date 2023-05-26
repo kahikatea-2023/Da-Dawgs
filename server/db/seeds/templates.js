@@ -7,7 +7,7 @@ exports.seed = async function (knex) {
       mainColour: 6,
       accentColour: 2,
       backgroundColour: 8,
-      fontColour: 9,
+      fontColour: 9
     },
   ])
 }
