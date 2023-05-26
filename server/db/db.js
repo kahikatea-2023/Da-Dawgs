@@ -4,6 +4,7 @@ const connection = require('knex')(config)
 
 module.exports = {
   getColours,
+  getColoursForTemplates,
 }
 
 // async function getColours(db = connection) {
@@ -23,6 +24,10 @@ module.exports = {
 // }
 
 async function getColours(db = connection) {
+  return await db('colours').select()
+}
+
+async function getColoursForTemplates(db = connection) {
   return await db('templates')
     .join('colours as c1', 'c1.id', 'templates.mainColour')
     .join('colours as c2', 'c2.id', 'templates.accentColour')
