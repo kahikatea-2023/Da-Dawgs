@@ -2,17 +2,77 @@ body {
   background-color: white;
 }
 
-.main {
-}
-
-.accent {
-
-}
-
-.bg {
-
+.selector {
+  display: flex;
+  flex-direction: column;
 }
 
 button {
   padding: 0.5em;
+}
+
+.logo {
+  padding: 15px;
+  font-size: 30px;
+  color: white;
+  }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 30px;
+  color: white;
+}
+
+.header {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  background-color: black;
+  width: 100%;
+}
+
+.playground {
+  border-left: 1px solid black;
+}
+
+.article {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  /* border: 1px solid black; */
+  background-color: darkgray;
+  padding: 15px;
+}
+
+.h-content {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.body {
+  padding-left: 50px;
+} 
+
+.button1 {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+
+}
+
+.button2{
+  background-color: darkgray;
+  color: black;
+  border-radius: 15px;
+}
+
+.btn-container {
+  padding-top: 20px;;
 }
