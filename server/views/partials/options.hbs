@@ -1,0 +1,6 @@
+<select name="colourOptions" id="colour-select" onchange="changeColour()">
+  <option value="Please choose a colour"></option>
+ {{#each colour}}
+ <option value="{{colourId}}">{{colourName}}</option>
+ {{/ each}}
+</select>
