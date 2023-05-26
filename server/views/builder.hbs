@@ -5,18 +5,21 @@
     <form action="/builder">
 
       <label for="main-colour-select">
-        <select name="mainColourSelect" id="mainColourSelect">{{> options}}</select>
-        </label>
+        Main Colour: 
+        <select name="mainColour" id="mainColourSelect">{{> options}}</select>
+      </label>
       <label for="">
-        <select name="accentColourSelect" id="accentColourSelect">{{> options}}</select>
-        </label>
+        Accent Colour: 
+        <select name="accentColour" id="accentColourSelect">{{> options}}</select>
+      </label>
       <label for="">
-        <select name="bgColourSelect" id="bgColourSelect">{{> options}}</select>
-        </label>
+        Background Colour: 
+        <select name="bgColour" id="bgColourSelect">{{> options}}</select>
+      </label>
       <label for="">
-        <select name="fontColourSelect" id="fontColourSelect">{{> options}}</select>
-        </label>
-
+        Font Colour: 
+        <select name="fontColour" id="fontColourSelect">{{> options}}</select>
+      </label>
     </form>
   </div>
   <div class="playground">
@@ -31,20 +34,32 @@
           <li>Item 5</li>
         </ul>
         </nav>
-        <div class="body">
-          <h1>H1 Header</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <div class="btn-container">
-            <button class="mainColour">Primary Button</button>
-            <button class="accentColour">Accent Button</button>
+      </div>
+      <div class="body">
+        <h1>H1 Header</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="btn-container">
+          <button class="mainColour">Primary Button</button>
+          <button class="accentColour">Accent Button</button>
+        </div>
+        <div class="article accentColour">
+          <img src="/" alt=""><div class="article-content">
+            <h2>H2 Header</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <div class="article accentColour">
-            <img src="/" alt=""><div class="article-content">
-              <h2>H2 Header</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-          </div>
+        </div>
+        <footer class="mainColour">
+        <nav>   
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </ul>
+        </nav>
+        </footer>
         </div>
       </div>
   </div>

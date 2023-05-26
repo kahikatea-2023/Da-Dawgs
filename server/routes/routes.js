@@ -21,7 +21,7 @@ router.get('/builder', async (req, res) => {
   }
 
   const viewData = { colours, template }
-  // console.log('viewData: ', viewData)
+  console.log(viewData)
 
   res.render('builder', viewData)
 })

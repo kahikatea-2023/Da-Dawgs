@@ -1,16 +1,21 @@
 body {
-  background-color: white;
+  background-color: #ffffff;
 }
 
-.main {
+.mainColour {
+  background-color: #ff0000;
 }
 
-.accent {
-
+.accentColour {
+background-color: #0000ff;
 }
 
-.bg {
+.playground {
+ background-color: #800080;
+}
 
+p {
+  color: #000000
 }
 
 button {

@@ -1,6 +1,5 @@
-<select name="colourOptions" id="colour-select" onchange="changeColour()">
-  <option value="Please choose a colour"></option>
+
+<option value="">Please choose a colour</option>
  {{#each colours}}
- <option value="{{colourId}}" style="background-color: {{colourHex}};"></option>
+ <option value="{{id}}" style="background: #{{colourHex}};">{{colourName}}</option>
  {{/each}}
-</select>
