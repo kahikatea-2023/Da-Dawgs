@@ -13,13 +13,12 @@ document.getElementsByTagName('select')
 function changeColour(event) {
   const select = event.target
   const name = select.name
-  console.log(select)
+
   const option = select.selectedIndex
   const colour = select[option].style.backgroundColor
-  console.log(colour)
+
   let target
   if (name === 'bgColour') {
-    console.log('want to change bg')
     document.getElementsByClassName('playground')[0].style.backgroundColor =
       colour
   }
@@ -32,10 +31,8 @@ function changeColour(event) {
   for (let i = 0; i < target.length; i++) {
     const element = target[i]
     if (name === 'fontColour') {
-      console.log('fontColour')
       element.style.color = colour
     } else {
-      console.log('fillColour changed')
       element.style.backgroundColor = colour
     }
   }

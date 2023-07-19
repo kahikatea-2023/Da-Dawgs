@@ -1,10 +1,21 @@
-# Boilerplate: Knex.js
+# Website Template Editor by Da Dawgs
+
+![website-template-editor](website-template-editor.png)
+
+## Info
+
+This project was made for learning as a Friday Group Project during the Dev Academy Bootcamp. This app was made my Adam, Andrew, Jaelyn and Quinn. The goal of this app was to allow a user to select different colours to change aspects of the site. The was accomplished with vanilla JavaScript editting HTML elements styles.
 
 ## Setup
 
-### What's included
+```
+npm i 
+npm run knex migrate:latest
+npm run knex mseed:run
+npm run dev
+```
 
-Phase 1 boilerplate project with:
+### What's included
 
  - Express
  - Knex
@@ -13,17 +24,3 @@ Phase 1 boilerplate project with:
  - body-parser
  - Jest
  - nodemon
-
-### Installation
-
-```
-npm install
-npm run knex migrate:latest
-npm run knex seed:run
-npm run dev
-```
-
-Be sure to check out the other npm scripts too.
-
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-knex)
